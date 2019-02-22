@@ -29,6 +29,11 @@
 \usepackage{ulem}
 \usepackage{physics}
 
+\newcommand{\lsm}{L$\sigma$M}
+\newcommand{\nlsm}{NL$\sigma$M}
+\newcommand{\groupsu}[1]{S\!U(#1)}
+
+
 
 \begin{document}
 \title{Effective Theories of the Strong Interaction}
@@ -83,7 +88,54 @@ We don't see nearly the same disparity between heavy quark analogues, so this po
 
 \section{Linear $\sigma$ Theories}\label{IV}
 
-The linear sigma model was introduced prior to the proposal and discovery of quarks in an effort to develop a theory of interactions between pions and nucleons. In their original work \cite{GellMann1960}, Gell-Mann and Levy
+The linear sigma model was introduced prior to the proposal and discovery of quarks in an effort to develop a theory of interactions between pions and nucleons. In their original work \cite{GellMann1960}, Gell-Mann and Levy explored possible models of pion-nucleon interaction motivated from the rate of charged pion decay proposed by Goldberger and Treiman \cite{Goldberger1958}. Included in these models is the first formulation of the linear $\sigma$ model (\lsm), as well as the nonlinear $\sigma$ model which we will discuss in Section \ref{V}.
+
+To motivate the \lsm, we wish to have a theory that describes a nucleon isodoublet 
+\begin{align}
+    N &= 
+        \begin{pmatrix}
+          p \\
+          n
+        \end{pmatrix},
+  \end{align}
+  and a isotriplet pion field $\mathbf{\pi}$. The model is motivated by ${S\!U}_L(2)\times {S\!U}_R(2)$ chiral symmetry; in order to have a chirally-symmetric theory, we must introduce an isoscalar field $\sigma$. [CITATION/PROOF] 
+  
+  Fromt these conditions, we can write down the appropriate Lagrangian for the \lsm. In order to highlight an interesting feature of the model, we will consider the Lagrangian for a massless nucleon isodoublet. 
+  \begin{equation}
+      \label{lsmLagrangian}
+      \mathcal{L} = \bar{N}i \slashed{\partial}N + g\bar{N}(\sigma + i \mathbf{\tau \cdot \pi}\gamma_{5})N +\frac{1}{2}\left[(\partial_{\mu}\mathbf{\pi})^{2}+(\partial_{\mu}\mathbf{\sigma})^{2}\right]-\frac{1}{2}\mu^2\left(\sigma^2+\mathbf{\pi}^2\right) - \frac{1}{4}\lambda\left(\sigma^2+\mathbf{\pi}^2\right)^2,
+  \end{equation}
+  where $\tau = (\tau_1, \tau_2, \tau_3)$ are Pauli matrices, the generators of $\groupsu{2}$.
+  This Lagrangian \eqref{lsmLagrangian} is chirally-symmetric under vector $\groupsu{2}$
+  \begin{align}
+      \pi  & \rightarrow \pi + \alpha \times \pi\\
+      \sigma & \rightarrow \sigma,
+  \end{align}
+  and axial vector $\groupsu{2}$
+  \begin{align}
+      \pi  & \rightarrow \pi + \alpha\sigma\\
+      \sigma & \rightarrow \sigma-\alpha \cdot \pi.
+  \end{align}
+  
+  
+  [ANALYSE SYMMETRY HERE]
+  
+  As previously addressed in our discussions about SSB in Section \ref{II}, we expect that chiral symmetry is spontaneously broken while isospin symmetry is preserved. So, we expect that a theory describing the strong interaction would exhibit this symmetry breaking. Let us consider the potential terms from the Langrangian \eqref{lsmLagrangian},
+  \begin{align}
+      V(\sigma,\pi) = &\frac{1}{2}\mu^2\left(\sigma^2+\mathbf{\pi}^2\right) + \frac{1}{4}\lambda\left(\sigma^2+\mathbf{\pi}^2\right)^2\\
+      = & \frac{\lambda}{4}\left(\sigma^2+\pi^2 + \frac{\mu^2}{\lambda} \right)^2,\label{potential}
+  \end{align}
+  where we can write the potential in the form of \eqref{potential} up to a constant term which does not affect the Lagrangian formalism. Minimizing the potential gives us the prototypical example of SSB,
+  \begin{gather}
+      \frac{\mathrm{d}V}{\mathrm{d}\mathbf{\sigma}} = \lambda \sigma \left[ -\frace{\mu^2}{\lambda} + \sigma^2 + \pi^2  \right]=0 \label{minPotentialSigma}\\
+      \frac{\mathrm{d}V}{\mathrm{d}\mathbf{\pi}}= \lambda \pi \left[ -\frace{\mu^2}{\lambda} + \sigma^2 + \pi^2  \right]=0 \label{minPotentialPi}.
+  \end{gather}
+Different solutions exist depending on the sign of the coupling $\mu^2$. For $\mu^2/\lambda \, \textgreater\, 0$, \eqref{minPotentialSigma} and \eqref{minPotentialPi} give a minimum occurring at the origin, while $\mu^2/\lambda \, \textless\, 0$  results in the spontaneous breakdown of chiral symmetry in our model, with degenerate ground states given by the minimized value 
+\begin{equation}
+    \sigma^2 + \pi^2 = \abs{\mu^2/\lambda}.
+    \label{doublewellMinimum}
+\end{equation}
+In this case, our vacuum must satisfy both \eqref{doublewellMinimum} and 
 \subsection{Extended L$\sigma$M}
 \subsection{Applications}
 \section{Non-linear $\sigma$ Theories}\label{V}
