@@ -1,4 +1,4 @@
-\documentclass[aps,prd,onecolumn,showpacs,amsmath,amssymb,nofootinbib]{revtex4} \pdfoutput=1
+\documentclass[aps,prd,onecolumn,showpacs,amsmath,amssymb,nofootinbib, 11pt]{revtex4} \pdfoutput=1
  
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -32,18 +32,20 @@
 \newcommand{\lsm}{L$\sigma$M}
 \newcommand{\nlsm}{NL$\sigma$M}
 \newcommand{\groupsu}[1]{S\!U(#1)}
+\newcommand{\gev}{\mathrm{GeV}}
+\newcommand{\mev}{\mathrm{MeV}}
 
 
 
 \begin{document}
-\title{Effective Theories of the Strong Interaction}
+\title{Models and Effective Theories of the Strong Interaction}
 
 \author{J.~Ho}
 \affiliation{Department of Physics and Engineering Physics\\ University of Saskatchewan\\ 
           Saskatoon, SK, S7N 5E2, Canada}
 
 \begin{abstract}
-While much interest and resources have been directed towards the TeV energy scales within particle physics as we search for answers regarding the Higgs, dark matter, and other fundamental questions, many open questions remain at low energy scales. In particular because of its fundamentally non-perturbative character, understanding quantum chromodynamics (QCD) and strong interactions at low energies presents experimental and theoretical challenges. We review the experimental status of the light hadronic spectrum and some tools for low-energy theorists, including linear and non-linear $\sigma$ theories in the chiral approximation.
+While much interest and resources have been directed towards the TeV energy scales within particle physics as we search for answers regarding the Higgs, dark matter, and other fundamental questions, many open questions remain at low energy scales. In particular because of its fundamentally non-perturbative character, understanding quantum chromodynamics (QCD) and strong interactions at low energies presents experimental and theoretical challenges. We review the experimental status of the light hadronic spectrum and some tools for low-energy theorists, including linear and non-linear $\sigma$ models in the chiral approximation.
 \end{abstract}
 \maketitle
 \section{Introduction}\label{I}
@@ -52,13 +54,59 @@ While much interest and resources have been directed towards the TeV energy scal
 
 \section{Low-energy QCD}\label{II}
 \subsection{Experimental Background}
-Below $2\,\mathrm{GeV}$, there exists a host of unresolved scalar hadronic resonances. While the higher energy vector and tensor states tend to be better understood, the scalar mesons are plagued with difficulties arising from wide resonance widths \& overlaps, cusps at mass thresholds, and the expectation of contamination by non-$\bar{q}q$ scalar states \cite{PDG2014}. Much work has been done to identify the scalar nonet from these unresolved resonances, to parallel the work done with the ground state vector, pseudoscalar, and tensor mesons [REF- VERIFY]. 
-The masses of these scalar mesons seem to indicate a structure distinct from that of the vector or tensor mesons (see Figure \ref{}); the reversed mass hierarchy is consistent with a four-quark ($qq\bar{q}\bar{q}$) interpretation rather than a $q\bar{q}$ structure \cite{Fariborz2010,Jaffe1977}. 
+Below $2\,\mathrm{GeV}$, there exists a host of unresolved scalar hadronic resonances. While the higher energy vector and tensor states tend to be better understood, the scalar mesons are plagued with difficulties arising from wide resonance widths \& overlaps, cusps at mass thresholds, and the expectation of contamination by non-$\bar{q}q$ scalar states \cite{PDG2014}. While clearly defined flavour nonets of pseudoscalar, vector, and tensor states can be formed our of experimental data [FIGURE?] \cite{Dobbs2017, others!!!}, there exists an overpopulation of light scalars below an energy threshold of $1.7\,\gev$ to form a single nonet. It has been proposed that these states form two scalar flavour nonets: one of $q\bar q$ quarkonia, and one meson-meson or $qq\bar{q}\bar{q}$ nonet \cite{Jaffe1977,Close2002,tHooft2008}. Given the complexities in experimental analysis of low-lying scalar resonances such as the $\sigma(500)$ or the $f_0(1370)$, support for this two nonet interpretation is mixed \cite{Ochs2001,Zhang2011}, with some suggesting that some of these higher energy resonances may be identified with excited states. However, there are compelling reasons from our understanding of QCD that motivates a two octet model. A scalar glueball is predicted from QCD using several theoretical approaches; current methods put mass predictions in the range of $1.0\,\gev$ and $1.7\,\gev$ \cite{Ochs2013, others???}, which would. While it is predicted that significant mixing occurs between the glueball and conventional scalar meson states, details about the dynamics of the glueball are not yet understood. However, it is predicted that mixing with scalar meson states will manifest in three particular combinations aligning with the observations of the $f_0(1500)$,$f_0(1370)$, and $f_0(1710)$ states. Further, experimental observations of the heavy flavour sector show that the scalar states follow well-defined and expected behaviour (other than the XYZ resonances?), and our understanding of the predicted linear potential is confirmed in the ``uncomplicated'' scalar spectrum of the $c\bar c$ and $b \bar b$ systems. We observe [CONFIRM] that the structure and spacing of the isoscalar states in $c\bar c$, $b \bar b$, and $u \bar d$ systems are similar because of this, and we expect if the pattern persists we should see the emergence of a light $q \bar q$ nonet just above $1\,\gev$. Finally, below $1\,\gev$ we expect the behaviour of quark interactions to be different that in the perturbative regime. In particular, it is predicted that the interaction between diquark pairs becomes more significant [CITE], very similar to the meson-meson attraction at low energies. This, combined with the observed inversion of isospin in the mass spectrum observed below $1\,\gev$ [FIGURE] suggests the formation of a $qq\bar{q}\bar{q}$ or meson-meson nonet. 
 
-The most experimentally complex case of these scalar mesons are the lightest scalar-isoscalar mesons $\left(I(J^{PC})= 0(0^{++})\right)$. 
+The nature of these hadronic states above and below $1\,\gev$ is far from settled, and more experimental investigation is necessary to clarify the picture. While these resonances have long been observed experimentally, many of them are not well understood given their overlapping or large widths, proximity to thresholds, and susceptibility to glueball mixing. What follows is a review of the experimental status of each isospin group of the $J^{PC}=0^{++}$ resonances. 
+\subsubsection{$a_{0}(980)$ and $a_{0}(1450)$}
+The $a_0$ isovector states ($I=1$), $a_{0}(980)$ and $a_{0}(1450)$, are both well-established experimentally \cite{Abele1998}, but conclusions as to their structure have yet to be confirmed. The $a_{0}(980)$ state exists just below the $\bar K K$ threshold manifesting as a cusp between the $K\bar K$ and $\pi \eta$ channels \cite{Uehara2002}, making it difficult to accurately determine its resonance width (Table \ref{table:scalars}). Because of its position so close to the $\bar K K$ threshold, many models suggest it is a four-quark mesonium state \cite{Mathur2007, Achasov2010,Zhang2011}. This begs the question as to whether the remaining $a_{0}(1450)$ state corresponds to the isovector scalar $q\bar q$ state, given that its heavier mass compared to $a_{0}(980)$ is inconsistent with the conventional quark model predictions. Alternatively, some have suggested that the $a_0(980)$ state is the lowest-lying $q\bar q$ state, while the $a_0(1450)$ represents a first excited state \cite{Zhang2011}. 
+\subsubsection{$K^{*}_{0}(700)$ and $K^{*}_{0}(1430)$}
+
+\subsubsection{$f_0$ states}
+
+Not predominantly $K\bar{K}$ state \cite{Lee2013}.
+$f_0(1370)$ predominantly $q\bar q$; $f_0(1500)$ predominantly glueball \cite{Janowski2011}.
+
+\subsubsection{$\sigma(600)$}
+Perhaps the most historically controversial particle, the $\sigma$ meson was first theoretically born in the proposed linear $\sigma$ model, where a scalar singlet was introduced to preserve chiral symmetry in Gell-Mann and L\'evy's original effective model for the strong interaction between nucleons and pions \cite{GellMann1960}. At the time, there was no experimental reason to motivate such a particle. 
+
+
+Theoretical NJL mass prediction \cite{Schumacher2011} $m_{\sigma} = 0.685\,\gev$
+\subsubsection{Glueballs}
+A consequence of the non-abelian nature of QCD is in the dynamics of the bicolored gluons and the possibility of the formation of pure gluon bound states, also known as glueballs. It is predicted that  a scalar glueball ($J^{PC} = 0^{++}$) exists at energies between $1.0\,\gev$ and $1.7\,\gev$ \cite{Ochs2013}, which makes identification of other scalar states at this energy complicated as it is anticipated that these glueballs will mix with $q\bar q$ states. No conclusive observation of this glueball state has been recorded, but there are predictions that it could be identified in the scalar resonances shown here in Table \ref{table:scalars}. Specifically, the $f_0(500)$, $f_0(980)$, $f_0(1370)$, $f_0(1500)$, and $f_0(1710)$ states have all been suggested as possible glueball candidates \cite{Ochs2013}. 
+
+\begin{table}[!htb]
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+
+PDG Reference   & Alias(es) & $I(J^{PC})$     & Mass ($\gev$) & Width ($\gev$) \\ \hline
+$K^{*}_0(700)$  & $\kappa$  & $\frac{1}{2}(0^{+})$ &  $0.824\pm0.030$  &    $0.478\pm0.050$            \\ \hline
+$K^{*}_0(1430)$ &           & $\frac{1}{2}(0^{+})$ & $1.425\pm0.050$ & $0.270\pm0.080$             \\ \hline
+$a_0(980)$      &           & $1(0^{++})$           & $0.980\pm0.020$ & $0.050-0.100$               \\ \hline
+$a_0(1450)$     &           & $1(0^{++})$           & $1.474\pm0.019$ & $0.265\pm0.013$             \\ \hline
+$f_0(500)$      & $\sigma$  & $0(0^{++})$     & $0.400 - 0.550$ & $0.400 - 0.700$               \\ \hline
+$f_0(980)$      &           & $0(0^{++})$           & $0.990\pm0.020$ & $0.040-0.100$               \\ \hline
+$f_0(1370)$     &           & $0(0^{++})$           & $1.200-1.500$   & $0.200-0.500$               \\ \hline
+$f_0(1500)$     &           & $0(0^{++})$           & $1.505\pm0.006$ & $0.109\pm0.007$             \\ \hline
+$f_0(1200-1600)$     &           & $0(0^{++})$           &  &  \\ \hline
+$f_0(1710)$     &           & $0(0^{++})$           & $1.722^{+0.006}_{-0.005}$ & $0.135\pm0.007$               \\ \hline
+$X(1070)$       &           & $?(0^{++})$           & $1.072\pm0.001$ & $0.0035\pm0.0005$        \\ \hline
+$f_0(2020)$     &           & $0(0^{++})$           &               &                \\ \hline
+$f_0(2100)$     &           & $0(0^{++})$           &               &                \\ \hline
+$f_0(2200)$     &           & $0(0^{++})$           &               &                \\ \hline
+$f_0(2330)$     &           & $0(0^{++})$           &               &                \\ \hline
+\end{tabular}
+\caption{Summary of experimental data on scalar mesons observed below $2\,\gev$ \cite{PDG2014}.}
+\label{table:scalars}
+\end{table}
+
+The masses of these scalar mesons seem to indicate a structure distinct from that of the vector or tensor mesons (see Figure \ref{}); the reversed mass hierarchy is consistent with a four-quark ($qq\bar{q}\bar{q}$) interpretation rather than a $q\bar{q}$ structure \cite{Fariborz2010,Jaffe1977}, which has lead many researchers to believe the scalar nonet to be formed exclusively of four-quark states [CITE]. 
 
 \subsection{Symmetries}
-We know now that because of colour confinement free quarks are not observed; historically, much of the investigation into hadronic structure had to be done implicitly. Much of our understanding of the strong interaction was developed before the notion of quarks and gluons was even conceptualized; by examining mathematical symmetries of the Lagrangians and equations of motion, deep insights can be made into the nature of matter. Emmy Noether's insight into how continuous symmetries in nature translate into conserved quantities was a revolutionary shift that has enormously impacted how we approach modern physics. She stated that...[MATHS HERE]. Her ideas form the foundation of many of the most important insights into particle physics to date.
+We know now that hadrons are made up of constituent quarks, and because of colour confinement free quarks are not observed; historically, much of the investigation into hadronic structure had to be done implicitly. Much of our understanding of the strong interaction was developed before the notion of quarks and gluons was even conceptualized; by examining mathematical symmetries of the Lagrangians and equations of motion, deep insights can be made into the nature of matter. Emmy Noether's insight into how continuous symmetries in nature translate into conserved quantities was a revolutionary shift that has enormously impacted how we approach modern physics. She stated that...[MATHS HERE]. Her ideas form the foundation of many of the most important insights into particle physics to date.
+
+Symmetries play a vital role in developing models and effective theories for explaining physical phenomena. We know from the work of Emmy Noether that continuous symmetries correspond with conserved currents. Experimentally, we have found that hadrons are made up of constituent quarks, and because of colour confinement free quarks are not observed; historically, the prediction of quarks and investigation into hadronic structure was done through the examination of symmetries. 
+
+[NONET TABLES]
 
 As important to examine are the deviations from symmetries that we see in nature, also known as symmetry breaking. Symmetry breaking in quantum field theories manifests in three different ways:
 \begin{itemize}
@@ -66,7 +114,7 @@ As important to examine are the deviations from symmetries that we see in nature
     \item Spontaneous symmetry breaking
     \item Anomolous (quantum mechanical) symmetry breaking
 \end{itemize}
-QCD contains examples of all three of these. We'll examine the evidence and theory around spontaneous symmetry breaking, and follow that with a discussion about explicit symmetry breaking in QCD.
+QCD contains examples of all three of these. We will examine the evidence and theory around spontaneous symmetry breaking, and follow that with a discussion about explicit symmetry breaking in QCD.
 
 \subsubsection{Spontaneous Symmetry Breaking}
 Formally, spontaneous symmetry breaking (SSB) in the Nambu-Goldstone realization is defined by the condition
@@ -84,11 +132,29 @@ For example, by examining the patterns of known mesons, [TABLE HERE], we can see
 We don't see nearly the same disparity between heavy quark analogues, so this points to something unique happening in the light quark sector.
 
 \subsection{Chiral Approximation}
+
+\begin{gather}\label{chiralFields}
+    \psi_{L} = \frac{1}{2}(1+\gamma_{5})\psi\\
+    \psi_{R} = \frac{1}{2}(1-\gamma_{5})\psi
+\end{gather}
+\begin{gather}\label{chiralOperators}
+    \Gamma_{L} + \Gamma_{R} = 1\\
+    \Gamma_{L,R}\Gamma_{L,R} = \Gamma_{L,R}\\
+    \Gamma_{L}\Gamma_{R}= \Gamma_{R}\Gamma_{L} = 0
+\end{gather}
+
 \subsection{Effective Theories}
+In an effort to better understand complicated physical phenomena in particle physics, effective field theories (EFTs) have been an important tool for approximating sophisticated, unknown, or incomplete theories. Effective theories are built based on a specific range of distance or energy scales that are to be explored; just as quantum mechanics is not necessary to calculate the period of a simple pendulum, EFTs need not be comprehensive explanations of phenomena. They have been of particular use in exploring QCD and the strong interaction. The non-abelian nature of QCD makes it a challenge to calculate processes, particularly at higher orders of expansion and at energies outside of the perturbative regime. There are many effective theories commonly in use which describe different aspects of the strong interaction, such as
+\begin{itemize}
+    \item Heavy Quark Effective Theory (HQET)
+    \item Non-relativistic QCD (NRQCD)
+    \item Soft collinear Effective theory (SCET)
+    \item Chiral Perturbation Theory ($\chi$PT)
+\end{itemize}
+Of these EFTs, HQET and NRQCD address hadronic systems containing heavy-flavoured quarks ($c$ or $b$ quarks), and SCET describes interactions between hard and soft processes. We restrict our study to $\chi$PT, which pertains to light systems and low-energy hadronic phenomena. We will discuss this in further detail in Section \ref{V}.
+\section{Linear $\sigma$ Model}\label{IV}
 
-\section{Linear $\sigma$ Theories}\label{IV}
-
-The linear sigma model was introduced prior to the proposal and discovery of quarks in an effort to develop a theory of interactions between pions and nucleons. In their original work \cite{GellMann1960}, Gell-Mann and Levy explored possible models of pion-nucleon interaction motivated from the rate of charged pion decay proposed by Goldberger and Treiman \cite{Goldberger1958}. Included in these models is the first formulation of the linear $\sigma$ model (\lsm), as well as the nonlinear $\sigma$ model which we will discuss in Section \ref{V}.
+The linear sigma model was introduced prior to the proposal and discovery of quarks in an effort to develop a theory of interactions between pions and nucleons. In their original work \cite{GellMann1960}, Gell-Mann and L\'evy explored possible models of pion-nucleon interaction motivated from the rate of charged pion decay proposed by Goldberger and Treiman \cite{Goldberger1958}, and the possibility of an unstable isoscalar field $\sigma$ proposed by Schwinger \cite{Schwinger1957}. Gell-Mann and L\'evy also explored the first formulation of the nonlinear $\sigma$ model which we will discuss in Section \ref{V}.
 
 To motivate the \lsm, we wish to have a theory that describes a nucleon isodoublet 
 \begin{align}
@@ -98,9 +164,9 @@ To motivate the \lsm, we wish to have a theory that describes a nucleon isodoubl
           n
         \end{pmatrix},
   \end{align}
-  and a isotriplet pion field $\mathbf{\pi}$. The model is motivated by ${S\!U}_L(2)\times {S\!U}_R(2)$ chiral symmetry; in order to have a chirally-symmetric theory, we must introduce an isoscalar field $\sigma$. [CITATION/PROOF] 
+  and a isotriplet pion field $\mathbf{\pi}$. The model is motivated by ${S\!U}_L(2)\times {S\!U}_R(2)$ chiral symmetry; in order to have a chirally-symmetric theory, we must introduce an isoscalar field $\sigma$ \cite{Epelbaum2010}. The Lie algebra of the chiral symmetry ${S\!U}_L(2)\times {S\!U}_R(2)$ is isomorphic to that of the four-dimensional rotation group $S\!O(4)$; we know that, in analogy to the three-dimensional rotation group $S\!O(3)$, we must have four coordinates for a non-trivial representation. Given that we naturally only have three $\mathbf{\pi}$ fields readily available, in order to construct a non-trivial representation of $S\!O(4)$, we require a fourth field ($\sigma$).
   
-  Fromt these conditions, we can write down the appropriate Lagrangian for the \lsm. In order to highlight an interesting feature of the model, we will consider the Lagrangian for a massless nucleon isodoublet. 
+  From these conditions, we can write down the appropriate Lagrangian for the \lsm. In order to highlight an interesting feature of the model, we will consider the Lagrangian for a massless nucleon isodoublet, constructed from scalar and pseudoscalar Yukawa interactions. 
   \begin{equation}
       \label{lsmLagrangian}
       \mathcal{L} = \bar{N}i \slashed{\partial}N + g\bar{N}(\sigma + i \mathbf{\tau \cdot \pi}\gamma_{5})N +\frac{1}{2}\left[(\partial_{\mu}\mathbf{\pi})^{2}+(\partial_{\mu}\mathbf{\sigma})^{2}\right]-\frac{1}{2}\mu^2\left(\sigma^2+\mathbf{\pi}^2\right) - \frac{1}{4}\lambda\left(\sigma^2+\mathbf{\pi}^2\right)^2,
@@ -117,9 +183,6 @@ To motivate the \lsm, we wish to have a theory that describes a nucleon isodoubl
       \sigma & \rightarrow \sigma-\alpha \cdot \pi.
   \end{align}
   
-  
-  [ANALYSE SYMMETRY HERE]
-  
   As previously addressed in our discussions about SSB in Section \ref{II}, we expect that chiral symmetry is spontaneously broken while isospin symmetry is preserved. So, we expect that a theory describing the strong interaction would exhibit this symmetry breaking. Let us consider the potential terms from the Langrangian \eqref{lsmLagrangian},
   \begin{align}
       V(\sigma,\pi) = &\frac{1}{2}\mu^2\left(\sigma^2+\mathbf{\pi}^2\right) + \frac{1}{4}\lambda\left(\sigma^2+\mathbf{\pi}^2\right)^2\\
@@ -130,15 +193,51 @@ To motivate the \lsm, we wish to have a theory that describes a nucleon isodoubl
       \frac{\mathrm{d}V}{\mathrm{d}\mathbf{\sigma}} = \lambda \sigma \left[ -\frace{\mu^2}{\lambda} + \sigma^2 + \pi^2  \right]=0 \label{minPotentialSigma}\\
       \frac{\mathrm{d}V}{\mathrm{d}\mathbf{\pi}}= \lambda \pi \left[ -\frace{\mu^2}{\lambda} + \sigma^2 + \pi^2  \right]=0 \label{minPotentialPi}.
   \end{gather}
-Different solutions exist depending on the sign of the coupling $\mu^2$. For $\mu^2/\lambda \, \textgreater\, 0$, \eqref{minPotentialSigma} and \eqref{minPotentialPi} give a minimum occurring at the origin, while $\mu^2/\lambda \, \textless\, 0$  results in the spontaneous breakdown of chiral symmetry in our model, with degenerate ground states given by the minimized value 
+  %QUESTION: Why does lambda have to be positive here? Renormalization?
+Different solutions exist depending on the sign of the coupling $\mu^2$. For $\mu^2/\lambda \, \textgreater\, 0$, \eqref{minPotentialSigma} and \eqref{minPotentialPi} give a minimum occurring at the origin ($\sigma = \mathbf{\pi} = 0$), while $\mu^2/\lambda \, \textless\, 0$  results in the spontaneous breakdown of chiral symmetry in our model, with degenerate ground states given by the minimized value 
 \begin{equation}
-    \sigma^2 + \pi^2 = \abs{\mu^2/\lambda}.
+    \sigma^2 + \pi^2 = \abs{\mu^2/\lambda} \equiv v^2.
     \label{doublewellMinimum}
 \end{equation}
-In this case, our vacuum must satisfy both \eqref{doublewellMinimum} and 
-\subsection{Extended L$\sigma$M}
+% Clarify why the vacuum is associated with the isosinglet- single vacuum value?
+In this case, our vacuum must satisfy both \eqref{doublewellMinimum} be associated with the singlet state. Our minimized value takes on the form of a 4-sphere with $O(3)$ degeneracy; unlike the case of $\mu^2\,\textgreater0$, equation \ref{doublewellMinimum} shows a non-unique choice of vacuum for values of $\sigma$ and $\pi$, and a non-vanishing vacuum expectation value (VEV). Since we require the vacuum to be a singlet, without loss of generality we can choose the vacuum such that
+\begin{gather}
+    \langle \mathbf{\pi} \rangle = 0  \\
+    \langle \sigma \rangle = v.
+\end{gather}
+This non-zero VEV is a clear sign of spontaneous symmetry breaking; we see this manifest as we define the physical field $\sigma'=\sigma -v$, aligning to our new vacuum. Our Lagrangian in terms of $\sigma'$ is
+\begin{align}
+    \label{lsmLagrangianSSB}
+      \mathcal{L} = & \bar{N}i \slashed{\partial}N + g\bar{N}(\sigma' + i \mathbf{\tau \cdot \pi}\gamma_{5})N + gv\bar{N}\\ & +\frac{1}{2}\left[(\partial_{\mu}\mathbf{\pi})^{2}+(\partial_{\mu}\mathbf{\sigma'})^{2}\right]-\frac{1}{2}\mu^2\left({\sigma'}^2+\mathbf{\pi}^2\right) -\frac{1}{4}\lambda\left({\sigma'}^2+\mathbf{\pi}^2\right)^2\\
+      & + \frac{1}{2}\mu^2 v^2 +\mu^2 v {\sigma'}- \frac{3}{2}\lambda v^2 {\sigma'}^2-\lambda\left(v^3 \sigma' + \frac{1}{4} v^4 +v^2\pi^2+ 2v {\sigma'}\pi^2 \right) + \mathrm{const.}
+\end{align}
+%CHECK THESE MASS RESULTS - Pokorski RESULT (p.237) IS DIFFERENT
+Here we can observe a compelling property of the \lsm: the masses of the nucleon $N$ ($m_N = gv$) and the $\sigma'$ ($m_{\sigma'} = -\frac{3}{2}\lambda v^2$) are dynamically generated through spontaneous symmetry breaking, while the $\mathbf{\pi}$ Goldstone bosons remain massless (recall \eqref{lsmLagrangian} contained no explicit mass terms). This has similarities to the Anderson-Higgs mechanism which was later proposed \cite{higgs1,higgs2,higgs3} in that the introduction of a scalar particle dynamically generates a mass term through SSB. In the case of the \lsm, this resolves simply with the generation of (in the chiral limit) Nambu-Goldstone bosons, while in the Anderson-Higgs mechanism the Nambu-Goldstone bosons provide mass to the $W^{\pm},\,Z$ gauge bosons. Given the role of the scalars in spontaneously breaking the chiral symmetry, this has motivated some to nominate the scalar mesons as the ``Higgs sector of the strong interaction'' \cite{Pennington2005,Schumacher2011}  despite the absence of an Anderson-Higgs mechanism.
+
+To express the {\lsm} in terms of its chiral symmetry we can define a matrix field $\Sigma$ made up of our scalar and pseudoscalar fields
+\begin{equation}
+    \Sigma = \sigma + i \tau \cdot \mathfb{\pi}
+\end{equation}
+where
+\begin{equation}
+    \sigma^{2} + \pi^{2} = \frac{1}{2}\Tr{\Sigma^{\dagger}\Sigma}.
+\end{equation}
+Using these results, as well as the properties of the chiral operators \eqref{chiralOperators}, we can express our {\lsm} Lagrangian \eqref{lsmLagrangian} in terms of $\Sigma$
+\begin{equation}\label{lsmLagrangianMatrixForm}
+\mathcal{L} = \bar{N}_{L}i \slashed{\partial}N_{L} + \bar{N}_{R}i \slashed{\partial}N_{R} + g\left( \bar{N}_{L}\Sigma N_{R} + \bar{N}_{R}\Sigma^{\dagger} N_{L} \right) + \frac{1}{4}\Tr{\partial_{\mu}\Sigma\partial^{\mu}\Sigma^{\dagger}} + \frac{1}{4} \mu^{2} \Tr{\Sigma^{\dagger}\Sigma} - \frac{\lambda}{16}\Tr{\Sigma^{\dagger}\Sigma}^{2}
+\end{equation}
+In this form, we can readily see the ${S\!U}_L(2)\times {S\!U}_R(2)$ chiral symmetry emerging, where our Lagrangian remains invariant under the transformation properties
+\begin{gather}\label{su2Symmetries}
+    N_{L,R} \rightarrow {N'}_{L,R} = U_{L,R} N_{L,R}\\
+    \Sigma \rightarrow {\Sigma'} = U_{L}\Sigma U^{\dagger}_{R},
+\end{gather}
+where $U_{L,R} = \exp{-i \mathbf{\alpha}_{L,R}\cdot\mathbf{\tau}/2}$.
+
+While efforts have been made since the discovery of quarks and the formalization of QCD to extend and modernize the \lsm, it remains a toy model for exploring hadronic phenomena. However, it has provided an important foundation for our understanding of nucleon-pion interactions, the nature of the $\sigma$ meson, and to the mechanism of SSB. It has and it continues to provide a useful description of hadronic interaction [CITE - Ext. \lsm, gauge \lsm].
+\subsection{Nambu-Jona-Lasino Model}
+Much like the \lsm, the Nambu-Jona-Lasino model (NJLM) was proposed shortly after Gell-Mann and L\'evy's {\lsm} was published \cite{NJL1, NJL2}. Like the {\lsm}, the NJLM originally was a description of nucleon interactions, which has since been reinterpreted in the light of quarks and the formalism of QCD.
 \subsection{Applications}
-\section{Non-linear $\sigma$ Theories}\label{V}
+\section{Non-linear $\sigma$ Model}\label{V}
 \subsection{Chiral Perturbation Theory}
 \subsection{Applications}
 
